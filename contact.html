@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diet plan</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+     <!-- nav bar -->
+     <div class="sticky top-0 bg-[#fdfefe]">
+        <div class="container">
+          <header class="max-md:px-5 z-10">
+            <nav class="flex justify-between items-center py-8">
+              <a
+                class="max-md:text-sm hover:font-bold hover:scale-105 duration-300"
+                href="./index.html"
+                >DIET PLAN</a
+              >
+              <!-- laptop nav -->
+              <div class="flex gap-5 max-md:hidden">
+                <div>
+                  <ul class="flex gap-5">
+                    <li class="hover:font-bold hover:scale-105 duration-300">
+                      <a href="./index.html">Home</a>
+                    </li>
+                    <li class="hover:font-bold hover:scale-105 duration-300">
+                      <a href="./products.html">Products</a>
+                    </li>
+                    <li class="hover:font-bold hover:scale-105 duration-300">
+                      <a href="./about.html">About us</a>
+                    </li>
+                    <li class="hover:font-bold hover:scale-105 duration-300">
+                      <a href="./contact.html">Contact us</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex gap-5">
+                  <svg
+                    class="hover:scale-105 duration-300"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-circle-user-icon lucide-circle-user"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <circle cx="12" cy="10" r="3" />
+                    <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662" />
+                  </svg>
+                  <svg
+                    class="hover:scale-105 duration-300"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-bell-ring-icon lucide-bell-ring"
+                  >
+                    <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+                    <path d="M22 8c0-2.3-.8-4.3-2-6" />
+                    <path
+                      d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+                    />
+                    <path d="M4 2C2.8 3.7 2 5.7 2 8" />
+                  </svg>
+                  <svg
+                    class="hover:scale-105 duration-300"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-shopping-cart-icon lucide-shopping-cart"
+                  >
+                    <circle cx="8" cy="21" r="1" />
+                    <circle cx="19" cy="21" r="1" />
+                    <path
+                      d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!-- mobile -->
+              <input hidden class="peer" id="sidebar" type="checkbox" />
+              <label for="sidebar" class="hidden max-md:block cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-menu-icon lucide-menu"
+                >
+                  <path d="M4 12h16" />
+                  <path d="M4 18h16" />
+                  <path d="M4 6h16" />
+                </svg>
+              </label>
+              <!-- mobile slide  -->
+              <div
+                class="max-md:block hidden fixed left-0 inset-y-0 w-64 bg-gray-50 transform -translate-x-full peer-checked:translate-x-0 transition-all duration-300"
+              >
+                <ul class="p-4 space-y-4">
+                  <li
+                    class="hover:font-bold hover:bg-gray-400 hover:scale-105 duration-300"
+                  >
+                    <a href="./index.html">Home</a>
+                  </li>
+                  <li
+                    class="hover:font-bold hover:bg-gray-400 hover:scale-105 duration-300"
+                  >
+                    <a href="./products.html">Products</a>
+                  </li>
+                  <li
+                    class="hover:font-bold hover:bg-gray-400 hover:scale-105 duration-300"
+                  >
+                    <a href="./about.html">About us</a>
+                  </li>
+                  <li
+                    class="hover:font-bold hover:bg-gray-400 hover:scale-105 duration-300"
+                  >
+                    <a href="./contact.html">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+        </div>
+      </div>
+      <!-- contact product  -->
+    <section class="bg-[url(/image/contact.png)] h-screen bg-center bg-cover max-md:h-auto mb-20">
+      <div class="container ">
+       
+      <p class="max-md:text-2xl max-md:pt-12  font-bold text-6xl text-center pt-52 mb-5"> Welcome To Diet Plan</p>
+     <div class="max-md:text-sm text-center text-lg">
+      <span class="pr-2">Home</span>
+      <span class="pr-2">/</span>
+      <span>About</span>
+     </div>
+    </div>
+      
+      
+    </section>
+    
+    <!-- contact us  -->
+    <div class="container mb-20 text-center">
+      <div class="flex   items-center justify-center font-ingrid mb-5">
+        <p class="border-b w-10 mr-8"></p>
+        <p class="pr-8 text-lg">Contact Us </p>
+        <p class="border-b w-10"></p>
+       </div>
+
+       <div>
+        <p class="text-6xl max-md:text-2xl font-semibold mb-5">Get in touch with us</p>
+        <p class="font-light text-sm">Contact for assistance and personalized dietary guidance. </p>
+       </div>
+    </div>
+     <!-- call card  -->
+     <section class="container mb-20">
+      <div class="grid grid-cols-3 gap-5 max-md:grid-cols-1">
+        <!-- phone  -->
+        <div class="grid grid-cols-2 bg-[#F6F4F4] p-5 rounded-lg">
+        
+          <div class="text-center p-5">
+            <p class="text-lg">Free Delivery</p>
+            <p class="text-[10px]">+(95) 987938524(16)</p>
+          </div>
+          <div class="bg-[url(/image/call1.png)] bg-no-repeat bg-center rounded-2xl p-10"></div>
+        </div>
+        <!-- message  -->
+        <div class="grid grid-cols-2 bg-[#F6F4F4] p-5 rounded-lg">
+          <div class="text-center p-5">
+            <p class="text-lg">Message us</p>
+            <p class="text-[10px]">www.mmsos.com</p>
+          </div>
+          <div class="bg-[url(/image/call2.png)] bg-no-repeat bg-center rounded-2xl p-10"></div>
+
+        </div>
+        <!-- located  -->
+        <div class="grid grid-cols-2 bg-[#F6F4F4] p-5 rounded-lg">
+          <div class="text-center p-5">
+            <p class="text-lg">Located in</p>
+            <p class="text-[10px]">Yangon,Myanmar</p>
+          </div>
+          <div class="bg-[url(/image/call3.png)] bg-no-repeat bg-center"></div>
+
+        </div>
+      </div>
+    </section>
+    <!-- helpful information -->
+    <div class="container mb-20 text-center">
+      <div class="flex   items-center justify-center font-ingrid mb-5">
+        <p class="border-b w-10 mr-8"></p>
+        <p class="pr-8 text-lg">Helpful information </p>
+        <p class="border-b w-10"></p>
+       </div>
+
+       <div>
+        <p class="text-6xl max-md:text-2xl font-semibold mb-5">Frequently Ask Questions</p>
+        <p class="font-light text-sm">Explore our comprehensive for dieting and nutrition. </p>
+       </div>
+    </div>
+    <!-- paragraph -->
+     <div class="container mb-20 ">
+      <div class="grid grid-cols-2 max-md:grid-cols-1">
+        <div >
+          <p class="font-semibold text-lg mb-3">How does your diet plan service work? </p>
+          <p class="text-sm font-light mb-3">Plans are updated monthly to ensure continued progress and cater to your evolving preferences.</p>
+          <p class="font-semibold text-lg mb-3">What is the cancellation policy? </p>
+          <p class="text-sm font-light mb-3">You can cancel your subscription at any time. Please refer to our terms of service for details</p>
+          <p class="font-semibold text-lg mb-3">Will I receive support from a nutritionist? </p>
+          <p class="text-sm font-light mb-3">Yes, our plans come with access to certified nutritionists for guidance and support throughout your journey.</p>
+  
+        </div>
+        <div>
+          <p class="font-semibold text-lg mb-3">
+            How do I get started with a diet plan? </p>
+          <p class="text-sm font-light mb-3">Simply sign up on our website, provide your details, and our team will create a tailored plan for you.</p>
+          <p class="font-semibold text-lg mb-3">What type of diets do you offer?
+          </p>
+          <p class="text-sm font-light mb-3">We provide a range of diet options including balanced, keto, vegetarian, and more. You can choose based on your needs.</p>
+          <p class="font-semibold text-lg mb-3">Can I customize my diet plan? </p>
+          <p class="text-sm font-light mb-3">Yes, you can customize your plan based on dietary restrictions, allergies, and food preferences.</p>
+        </div>
+      </div>
+     </div>
+      <!-- Connect with us -->
+    <div class="container mb-20 text-center">
+      <div class="flex   items-center justify-center font-ingrid mb-5">
+        <p class="border-b w-10 mr-8"></p>
+        <p class="pr-8 text-lg">
+          Connect with us </p>
+        <p class="border-b w-10"></p>
+       </div>
+
+       <div>
+        <p class="text-6xl max-md:text-2xl font-semibold mb-5">Feel free to reach out</p>
+        <p class="font-light text-sm">Feel free to contact us for any assistance you may need </p>
+       </div>
+    </div>
+    <!-- map  -->
+     <div class="grid grid-cols-2 max-md:grid-cols-1 container mb-20">
+      <div class="bg-[url(/image/map.png)] h-screen bg-center"></div>
+      <!-- input  -->
+      <div class="p-16">
+        <form class="w-xl max-md:w-full max-lg:w-sm" action="">
+          <h1 class=" mb-2">Full Name</h1>
+          <input class="input mb-5" type="text" name="" id="">
+          <h1 class=" mb-2">Email</h1>
+          <input class="input mb-5" type="text" name="" id="">
+          <h1 class=" mb-2">Message</h1>
+          <textarea class="input mb-5" rows="12" type="text" name="" id=""></textarea>
+        </form>
+       <div class="">
+        <button class="primary-btn rounded-full">Submit Request</button>
+
+       </div>
+      </div>
+     </div>
+       <!-- footer  -->
+    <footer>
+        <div class="bg-[#111111]">
+          <div
+            class="flex justify-between items-center container max-md:flex-col"
+          >
+            <div class="pt-5 flex flex-col text-white">
+              <p
+                class="mb-5 font-semibold max-md:text-xl text-2xl hover:scale-105 duration-300"
+              >
+                <a href="./index.html"> DIET PLAN </a>
+              </p>
+              <p class="h-40 text-sm">
+                Our comprehensive diet plan is designed to optimize your nutrition
+                and support your health goals, ensuring a balanced and sustainable
+                approach to eating.
+              </p>
+            </div>
+  
+            <div class="flex gap-20 max-md:flex-col max-md:gap-10">
+              <div class="text-white">
+                <p class="font-bold mb-5 hover:scale-105 duration-300">
+                  <a href="./products.html">Product</a>
+                </p>
+                <div class="max-md:text-sm">
+                  <p class="mb-2">Features</p>
+                  <p class="mb-2">How it works</p>
+                  <p class="mb-2">Pricing</p>
+                  <p class="mb-2">Testimonials</p>
+                </div>
+              </div>
+              <div class="text-white">
+                <p class="font-bold mb-5 hover:scale-105 duration-300">
+                  <a href="./about.html">About</a>
+                </p>
+                <div class="max-md:text-sm">
+                  <p class="mb-2">Our team</p>
+                  <p class="mb-2">Careers</p>
+                  <p class="mb-2">Press</p>
+                  <p class="mb-2">Stores</p>
+                </div>
+              </div>
+              <div class="text-white">
+                <p class="font-bold mb-5 hover:scale-105 duration-300">
+                  <a href="./contact.html">Contact</a>
+                </p>
+                <div class="max-md:text-sm">
+                  <p class="mb-2">MMS IT</p>
+                  <p class="mb-2">09250152018</p>
+                  <p class="mb-2">Shan kone Street</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="bg-[#000000]">
+          <div class="flex justify-between container p-3 max-md:text-sm">
+            <div class="flex text-white gap-5">
+              <p>2023 - MMSIT</p>
+              <p>all right reserved</p>
+            </div>
+            <div>
+              <p class="text-white text-right max-md:text-sm">MMSIT</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>

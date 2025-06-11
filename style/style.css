@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fontawesome.com/icons/house?f=classic&s=solidhttps://fontawesome.com/icons');
+@import "tailwindcss";
+
+@theme{
+    --font-sans:"Inter", sans-serif;
+
+}
+.container{
+    @apply max-w-[1120px] mx-auto  md:px-20 px-8 xl:px-0
+
+}
+.primary-btn{
+    @apply max-sm:py-[10px] max-sm:px-[18px] max-sm:text-[10px] text-[#FAFAFA] whitespace-nowrap bg-black text-sm py-3 px-6 hover:bg-white hover:text-black cursor-pointer active:scale-95 duration-300 border
+}
+.primary-outline-btn{
+    @apply max-sm:py-[10px] max-sm:px-[18px] max-sm:text-[10px] text-[#252525] whitespace-nowrap bg-[#FAFAFA] py-3 px-6 text-sm hover:bg-neutral-800 hover:text-white cursor-pointer active:scale-95 duration-300 border
+}
+.font-ingrid{
+    font-family: "Ingrid Darling", cursive;
+
+}
+.input{
+    @apply border border-neutral-300 py-3.5 px-3 max-md:py-3 w-full rounded-md
+}

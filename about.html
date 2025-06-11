@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diet plan</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!-- nav bar -->
+    <div class="sticky top-0 bg-[#fdfefe]">
+      <div class="container">
+        <header class="max-md:px-5 z-10">
+          <nav class="flex justify-between items-center py-8">
+            <a
+              class="max-md:text-sm hover:font-bold hover:scale-105 duration-300"
+              href="./index.html"
+              >DIET PLAN</a
+            >
+            <!-- laptop nav -->
+            <div class="flex gap-5 max-md:hidden">
+              <div>
+                <ul class="flex gap-5">
+                  <li class="hover:font-bold hover:scale-105 duration-300">
+                    <a href="./index.html">Home</a>
+                  </li>
+                  <li class="hover:font-bold hover:scale-105 duration-300">
+                    <a href="./products.html">Products</a>
+                  </li>
+                  <li class="hover:font-bold hover:scale-105 duration-300">
+                    <a href="./about.html">About us</a>
+                  </li>
+                  <li class="hover:font-bold hover:scale-105 duration-300">
+                    <a href="./contact.html">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex gap-5">
+                <svg
+                  class="hover:scale-105 duration-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-user-icon lucide-circle-user"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <circle cx="12" cy="10" r="3" />
+                  <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662" />
+                </svg>
+                <svg
+                  class="hover:scale-105 duration-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-bell-ring-icon lucide-bell-ring"
+                >
+                  <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+                  <path d="M22 8c0-2.3-.8-4.3-2-6" />
+                  <path
+                    d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+                  />
+                  <path d="M4 2C2.8 3.7 2 5.7 2 8" />
+                </svg>
+                <svg
+                  class="hover:scale-105 duration-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-shopping-cart-icon lucide-shopping-cart"
+                >
+                  <circle cx="8" cy="21" r="1" />
+                  <circle cx="19" cy="21" r="1" />
+                  <path
+                    d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- mobile -->
+            <input hidden class="peer" id="sidebar" type="checkbox" />
+            <label for="sidebar" class="hidden max-md:block cursor-pointer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-menu-icon lucide-menu"
+              >
+                <path d="M4 12h16" />
+                <path d="M4 18h16" />
+                <path d="M4 6h16" />
+              </svg>
+            </label>
+            <!-- mobile slide  -->
+            <div
+              class="max-md:block hidden fixed left-0 inset-y-0 w-64 bg-gray-50 transform -translate-x-full peer-checked:translate-x-0 transition-all duration-300"
+            >
+              <ul class="p-4 space-y-4">
+                <li
+                  class="hover:font-bold hover:bg-gray-400 hover:scale-105 duration-300"
+                >
+                  <a href="./index.html">Home</a>
+                </li>
+                <li
+                  class="hover:font-bold hover:bg-gray-400 hover:scale-105 duration-300"
+                >
+                  <a href="./products.html">Products</a>
+                </li>
+                <li
+                  class="hover:font-bold hover:bg-gray-400 hover:scale-105 duration-300"
+                >
+                  <a href="./about.html">About us</a>
+                </li>
+                <li
+                  class="hover:font-bold hover:bg-gray-400 hover:scale-105 duration-300"
+                >
+                  <a href="./contact.html">Contact us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <!-- about product  -->
+    <section
+      class="bg-[url(/image/about.png)] h-screen bg-center bg-cover max-md:h-auto max-md:mb-20 mb-40"
+    >
+      <div class="container">
+        <p
+          class="max-md:text-2xl max-md:pt-12 font-bold text-6xl text-center pt-52 mb-5"
+        >
+          Welcome To Diet Plan
+        </p>
+        <div class="max-md:text-sm text-center text-lg">
+          <span class="pr-2">Home</span>
+          <span class="pr-2">/</span>
+          <span>About</span>
+        </div>
+      </div>
+    </section>
+    <!-- gird section  -->
+    <div class="grid grid-cols-2 container max-md:grid-cols-1 mb-20 max-md:mb-10">
+      <div
+        class="grid bg-[url(/image/aboutperson.png)] bg-no-repeat max-md:h-98 max-md:w-auto rounded-lg bg-center"
+      ></div>
+
+      <div class="grid p-16">
+        <div class="flex justify-normal  items-center ">
+          <p class="font-ingrid mb-7 max-md:text-[10px] font-light text-lg">
+            Why Choose Us?
+          </p>
+          <p class="border-b w-14"></p>
+        </div>
+
+        <p class="text-5xl font-semibold w-80 max-md:text-2xl mb-7">
+          Refreshing Fruit Juice
+        </p>
+        <p class="text-lg max-md:text-sm w-80 font-light mb-7">
+          Start your day with a burst of freshness, indulge in our invigorating
+          range of fresh juices crafted from the finest fruits
+        </p>
+        <div class="flex items-center gap-5 mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+          <p class="max-md:text-sm" >Nature's bounty with fresh
+          </p>
+        </div>
+        <div class="flex items-center gap-5 mb-7">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+          <p class="max-md:text-sm" >Fresh Juice with Selections
+
+
+          </p>
+        </div>
+
+        <div>
+          <button class="primary-btn rounded-full mb-5">CONNECT NOW</button>
+        </div>
+      </div>
+    </div>
+     <!-- our team -->
+     <div class="container mb-20 text-center">
+      <div class="flex   items-center justify-center font-ingrid mb-5">
+        <p class="border-b w-10 mr-8"></p>
+        <p class="pr-8 text-lg">Our Team </p>
+        <p class="border-b w-10"></p>
+       </div>
+
+       <div>
+        <p class="text-6xl max-md:text-2xl font-semibold mb-5">Meet with Us</p>
+        <p class="font-light text-sm">We offers a wide range of high-quality products </p>
+       </div>
+    </div>
+    <!-- people card  -->
+     <div class="grid grid-cols-3 max-md:grid-cols-1 gap-8 container mb-40 ">
+      
+      <div class="flex flex-col items-center text-center  bg-[#F6F4F4] rounded-lg  p-8">
+        <img class="size-28 object-cover object-center rounded-full mb-4" src="./image/aboutpp1.jpg" alt="">   
+           
+            <p class="text-xl mb-2"> David James</p>
+            <p class="text-sm mb-3">Nutrition chef</p>
+            <div class="flex gap-2">
+              <img src="./image/google.png" alt="">
+              <img src="./image/facebook.png" alt="">
+              <img src="./image/twitter.png" alt="">
+              <img src="./image/in.png" alt="">
+             </div>
+
+            
+          </div>
+
+          <div class="flex flex-col items-center text-center  bg-[#F6F4F4] rounded-lg p-8">
+            <img class="size-28 object-cover object-center rounded-full mb-4" src="./image/aboutpp2.jpg" alt="">   
+               
+                <p class="text-xl mb-2"> Ella Wendy</p>
+                <p class="text-sm mb-3">Nutrition chef</p>
+               <div class="flex gap-2">
+                <img src="./image/google.png" alt="">
+                <img src="./image/facebook.png" alt="">
+                <img src="./image/twitter.png" alt="">
+                <img src="./image/in.png" alt="">
+               </div>
+    
+                
+              </div>
+
+              <div class="flex flex-col items-center  bg-[#F6F4F4] rounded-lg text-center p-8">
+                <img class="size-28 object-cover object-center rounded-full mb-4" src="./image/aboutpp3.jpg" alt="">   
+                   
+                    <p class="text-xl mb-2"> Robert Allen</p>
+                    <p class="text-sm mb-3">Nutrition chef</p>
+                    <div class="flex gap-2">
+                      <img src="./image/google.png" alt="">
+                      <img src="./image/facebook.png" alt="">
+                      <img src="./image/twitter.png" alt="">
+                      <img src="./image/in.png" alt="">
+                     </div>
+        
+                    
+                  </div>
+
+          
+    
+
+          
+        
+      </div>
+       <!-- nutrient rice -->
+    <section
+    class="bg-[url(/image/aboutwall.png)] h-screen bg-no-repeat mb-20 max-md:h-auto max-md:text-white"
+  >
+   
+    <div class="grid grid-cols-2 max-md:grid-cols-1">
+      <div class="grid"></div>
+      <div class="grid pt-40 pl-36 p-6">
+        <div class="flex container text-center items-center justify-normal mb-5 font-ingrid">
+           
+          <p class="pr-4 text-lg"> Organic Meal Plan</p>
+          <p class="border-b w-14"></p>
+         </div>
+        <p class="text-5xl font-semibold w-80 max-md:text-2xl mb-7">
+          Nutrient Rich Fruit
+
+        </p>
+        <p class="text-lg max-md:text-sm w-80 font-light mb-7">
+          Elevate your diet with our carefully selected organic fruits. Packed with essential vitamins and antioxidants
+        </p>
+        <div>
+          <button class="primary-btn rounded-full mb-5">SHOW ALL</button>
+        </div>
+      </div>
+    </div>
+         </section>
+        
+
+     <!-- log card  -->
+      <div class="grid grid-cols-4 gap-5 container mb-40 max-md:grid-cols-1">
+        <div class="bg-[#F6F4F4] rounded-lg bg-center px-16 py-4"> <img src="./image/about4.png" alt=""></div>
+        <div class="bg-[#F6F4F4] rounded-lg bg-center px-16 py-4"> <img src="./image/about5.png" alt=""></div>
+        <div class="bg-[#F6F4F4] rounded-lg bg-center px-16 py-4"> <img src="./image/about6.png" alt=""></div>
+        <div class="bg-[#F6F4F4] rounded-lg bg-center px-16 py-4"> <img src="./image/about7.png" alt=""></div>
+
+
+
+
+      </div>
+        
+
+
+      
+
+        
+
+      
+     
+    <!-- footer  -->
+    <footer>
+      <div class="bg-[#111111]">
+        <div
+          class="flex justify-between items-center container max-md:flex-col"
+        >
+          <div class="pt-5 flex flex-col text-white">
+            <p
+              class="mb-5 font-semibold max-md:text-xl text-2xl hover:scale-105 duration-300"
+            >
+              <a href="./index.html"> DIET PLAN </a>
+            </p>
+            <p class="h-40 text-sm">
+              Our comprehensive diet plan is designed to optimize your nutrition
+              and support your health goals, ensuring a balanced and sustainable
+              approach to eating.
+            </p>
+          </div>
+
+          <div class="flex gap-20 max-md:flex-col max-md:gap-10">
+            <div class="text-white">
+              <p class="font-bold mb-5 hover:scale-105 duration-300">
+                <a href="./products.html">Product</a>
+              </p>
+              <div class="max-md:text-sm">
+                <p class="mb-2">Features</p>
+                <p class="mb-2">How it works</p>
+                <p class="mb-2">Pricing</p>
+                <p class="mb-2">Testimonials</p>
+              </div>
+            </div>
+            <div class="text-white">
+              <p class="font-bold mb-5 hover:scale-105 duration-300">
+                <a href="./about.html">About</a>
+              </p>
+              <div class="max-md:text-sm">
+                <p class="mb-2">Our team</p>
+                <p class="mb-2">Careers</p>
+                <p class="mb-2">Press</p>
+                <p class="mb-2">Stores</p>
+              </div>
+            </div>
+            <div class="text-white">
+              <p class="font-bold mb-5 hover:scale-105 duration-300">
+                <a href="./contact.html">Contact</a>
+              </p>
+              <div class="max-md:text-sm">
+                <p class="mb-2">MMS IT</p>
+                <p class="mb-2">09250152018</p>
+                <p class="mb-2">Shan kone Street</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#000000]">
+        <div class="flex justify-between container p-3 max-md:text-sm">
+          <div class="flex text-white gap-5">
+            <p>2023 - MMSIT</p>
+            <p>all right reserved</p>
+          </div>
+          <div>
+            <p class="text-white text-right max-md:text-sm">MMSIT</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
