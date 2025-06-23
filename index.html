@@ -147,7 +147,8 @@
     </div>
     <!-- hero section  -->
     <!-- class="bg-[url('/image/header-img.png')] h-screen max-md:h-auto max-md:mb-20 mb-40" -->
-    <div style="background-image: url('/public/image/header-img.png'); background-size: cover; background-position: center;" >
+    <section style="background-image: url(./public/image/header-img.png);" 
+    class="h-screen max-md:h-auto max-md:mb-20 mb-40">
       <div class="grid grid-cols-2 max-md:grid-cols-1">
         <div class="grid p-36">
           <h1 class="max-md:text-2xl text-5xl font-bold mb-7">
@@ -178,7 +179,7 @@
 
         <div class="grid"></div>
       </div>
-    </div>
+    </section>
     <!-- product and service  -->
     <section>
       <div class="flex justify-between items-center container max-md:mb-20 mb-40">
@@ -566,7 +567,7 @@
     </section>
 
     <!-- sport  -->
-    <div class="flex justify-center gap-2">
+    <div class="flex justify-center gap-2 mb-20">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="10"
@@ -611,23 +612,22 @@
       </svg>
     </div>
     <!-- fresh juice  -->
-    <section
-      class="bg-[url(/image/healthy-juice.png)] h-screen mb-20 max-md:h-auto"
-    >
+    <div class="h-screen object-cover  max-md:h-auto mb-20"
+      style="background-image: url(./public/image/healthy-juice.png); " >
       <!-- <img class="object-cover" src="./image/healthy-juice.png" alt="fresh juice"> -->
 
       <div class="grid grid-cols-2 max-md:grid-cols-1">
         <div class="grid"></div>
-        <div class="grid pt-52 p-6">
-          <div class="flex container items-center  mb-5 font-ingrid">
+        <div class="grid pt-52 p-6 ">
+          <div class="flex container items-center max-md:mb-1  mb-5 font-ingrid">
            
             <p class="pr-4 text-lg">Why Choose Us</p>
             <p class="border-b w-14"></p>
            </div>
-          <p class="text-5xl font-semibold w-80 max-md:text-2xl mb-7">
+          <p class="text-5xl font-semibold w-80 max-md:text-2xl max-md:mb-2 mb-7">
             Refreshing Fruit Juice
           </p>
-          <p class="text-lg max-md:text-sm w-80 font-light mb-7">
+          <p class="text-lg max-md:text-sm w-80 font-light max-md:mb-2 mb-7">
             Start your day with a burst of freshness, indulge in our
             invigorating range of fresh juices crafted from the finest fruits
           </p>
@@ -636,7 +636,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <!-- start using day -->
     <div class="flex justify-between container mb-20">
       <div class=" ">
